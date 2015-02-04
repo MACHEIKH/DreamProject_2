@@ -503,11 +503,11 @@
 					"$ref" : "#/node"
 				}, {
 					"name":{
-						"type":"string", 
+						"type":"string",
 						"default":"Decomposition"
 					},
 					"id":{
-						"type":"string", 
+						"type":"string",
 						"default":"D"
 					}
 				}
@@ -557,11 +557,11 @@
 					"$ref" : "#/Dream.MachineJobShop"
 				}, {
 					"name":{
-						"type":"string", 
+						"type":"string",
 						"default":"Assembly"
 					},
 					"id":{
-						"type":"string", 
+						"type":"string",
 						"default":"MA"
 					}
 				}
@@ -746,7 +746,7 @@
 						}, {
 							"name" : "StationID",
 							"type" : "string"
-						}, { 
+						}, {
 							"name":"Sequence",
 							"type":"string"
 						}, {
@@ -859,7 +859,7 @@
 			"description" : "",
 			"_class" : "",
 			"input_id" : ""
-		}
+		},
 		"post_processing" : {
 			"description" : "",
 			"plugin_list" : [{
@@ -905,10 +905,14 @@
 					"type" : "number"
 				},
 				"trace" : {
-					"default" : false,
-					"description" : "Create an excel trace file (true or false)",
-					"title" : "Output Trace",
-					"type" : "boolean"
+					"default": "No",
+					"enum": [
+						"No",
+						"Yes"
+					],
+					"description": "Create an excel trace file (Yes or No)",
+					"title": "OutputTrace",
+					"type": "string"
 				},
 				"seed" : {
 					"default" : "",
